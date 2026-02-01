@@ -26,6 +26,15 @@
 .cyan{
     color: rgba(5, 212, 223, 1) ;
 }
+.btn-primary{
+    border-radius: 12px;
+background:  rgba(17, 17, 17, 1);
+padding: 10px;
+color: white;
+font-weight: 700;
+font-size: 1.25rem;
+border: none;
+}
 /* header styles */
 .head{
         padding-bottom: 10px;
@@ -67,6 +76,35 @@
 .menu-icon{
     display: none;
 }
+/* banner section */
+.banner{
+    max-width: 1150px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+.banner-contant{
+    max-width: 640px;
+   padding: 120px 50px 120px 0px;
+
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+.banner-description{
+    color: var(--Black, rgba(17, 17, 17, 1));
+font-size: 1.25rem;
+font-weight: 400;
+    padding-bottom: 24px;
+}
+
+
+
+
+
+
+
 
 /* responsive media mobile device */
 @media screen and (max-width:576px){
@@ -81,4 +119,17 @@
     .border{
     border-bottom: 1px solid #FEA301;
 }
+.banner{
+    flex-direction: column-reverse;
+}
+.banner-contant{
+    text-align: center;
+    padding: 20px;
+}
+}
+/* responsive with table/desktop*/
+@media screen and (min-width:576px) and (max-width:992px){
+    .banner{
+        padding: 20px;
+    }
 }
