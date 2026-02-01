@@ -1,3 +1,84 @@
-section{
-    background-color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.orang{
+    color: #FEA301;
+}
+.sky-blue{
+    color: rgba(1, 172, 253, 1);
+}
+.purple{
+  color: rgba(93, 88, 239, 1);;
+}
+.cyan{
+    color: rgba(5, 212, 223, 1) ;
+}
+/* header styles */
+.head{
+        padding-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.nav-logo{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.school{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.navbar ul{
+ display: flex;
+
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 32px;
+} 
+.navbar li a{
+    text-decoration: none;
+
+}
+.nav-btn{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: #FEA301;
+}
+.menu-icon{
+    display: none;
+}
+
+/* responsive media mobile device */
+@media screen and (max-width:576px){
+   .school, 
+   .navbar,
+   .nav-btn{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .border{
+    border-bottom: 1px solid #FEA301;
+}
 }
